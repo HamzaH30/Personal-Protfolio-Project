@@ -2,25 +2,35 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+  font-family: Metrophobic, sans-serif;
 }
+/* Max-width should be 1000px */
 
 body {
   background-color: #f3f3f3;
 }
 
 /* Header */
+
+nav,
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
 nav ul {
   list-style-type: none;
 
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
 nav a {
   text-decoration: none;
   margin: 0.25rem 0.2rem 0;
-  padding: 1rem 3rem;
+  padding: 1rem 3.4rem;
   display: inline-block;
 
   color: black;
@@ -28,9 +38,13 @@ nav a {
   border-top: 0.15em solid #a77305;
 }
 
+nav a:hover,
+#current-page {
+  border-top: 0.15em solid #593e03;
+}
+
 nav a:hover {
   color: #926402;
-  border-top: 0.25em solid #593e03;
 }
 
 /* Hero */
@@ -74,16 +88,5 @@ nav a:hover {
 
 /* Footer */
 footer {
-  background-color: lightblue;
-  /* position: absolute;
-  bottom: 0;
-  width: 100vw; */
-}
-
-.footer-container {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-
-  padding: 2rem 1rem;
+  border-top: 0.25rem solid black;
 }
