@@ -39,9 +39,9 @@ nav a:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  height: 100vh;
 
   /* height: calc(100vh - 56.8px - 82.4px); */
-  height: calc(100vh - 56.8px - 82.4px);
   text-transform: uppercase;
 }
 
