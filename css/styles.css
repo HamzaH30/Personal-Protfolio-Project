@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #f3f3f3;
+}
+
 /* Header */
 nav ul {
   list-style-type: none;
@@ -11,20 +15,22 @@ nav ul {
   display: flex;
   justify-content: center;
   align-items: center;
-
-  background-color: lightblue;
 }
 
 nav a {
   text-decoration: none;
-  padding: 1rem;
+  margin: 0.25rem 0.2rem 0;
+  padding: 1rem 3rem;
   display: inline-block;
+
+  color: black;
+
+  border-top: 0.15em solid #a77305;
 }
 
 nav a:hover {
-  background-color: black;
-  color: white;
-  text-decoration: underline;
+  color: #926402;
+  border-top: 0.25em solid #593e03;
 }
 
 /* Footer */
