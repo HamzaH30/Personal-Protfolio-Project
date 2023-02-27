@@ -1,92 +1,65 @@
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-
-  font-family: Metrophobic, sans-serif;
 }
-/* Max-width should be 1000px */
 
+/* Mobile: 320px */
 body {
-  background-color: #f3f3f3;
+  background: no-repeat linear-gradient(220deg, white, #38bdf8);
 }
 
-/* Header */
+h1,
+h2,
+p {
+  color: #0c0100;
+}
 
-nav,
-.container {
-  max-width: 1000px;
-  margin: 0 auto;
+header,
+main {
+  margin: 0 2rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
 }
 
 nav ul {
-  list-style-type: none;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: none;
+  list-style: none;
 }
 
-nav a {
-  text-decoration: none;
-  margin: 0.25rem 0.2rem 0;
-  padding: 1rem 3.4rem;
-  display: inline-block;
-
-  color: black;
-
-  border-top: 0.15em solid #a77305;
+img {
+  height: 100%;
 }
 
-nav a:hover,
-#current-page {
-  border-top: 0.15em solid #593e03;
-}
-
-nav a:hover {
-  color: #926402;
-}
-
-/* Hero */
-#hero {
+#main-page-text {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  height: 100vh;
 
-  /* height: calc(100vh - 56.8px - 82.4px); */
+  text-align: center;
+  height: calc(100vh - 29px - 32px);
   text-transform: uppercase;
 }
 
-#hero h1 {
-  font-family: Oswald, sans-serif;
-  font-size: 10em;
-}
-
-#hero h2 {
-  font-size: 2em;
+#intro-heading {
   font-family: Marvel, sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
 }
 
-#hero a {
-  text-decoration: none;
-  color: #a77305;
-  margin-top: 2rem;
-  padding: 0.5rem 1rem;
-  border: 0.1rem solid #593e03;
+#name-heading {
+  font-family: Oswald, sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
 }
 
-#hero a:hover {
-  background-color: #7b5400;
-  border-color: #a77305;
-  color: #ffae00;
-  border-radius: 5px;
-
-  transition: 0.3s all ease-in-out;
-}
-
-/* Footer */
-footer {
-  border-top: 0.25rem solid black;
+#intro-text {
+  font-family: Metal, cursive;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 120.1%;
 }
