@@ -6,6 +6,10 @@
 
 /* Default styles */
 
+body {
+  background-color: #83d9ff;
+}
+
 h1,
 h2,
 p,
@@ -13,9 +17,9 @@ a {
   color: #0c0100;
 }
 
-header,
-main {
-  margin: 0 2rem;
+.text-container {
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 /* Mobile default styling */
@@ -95,6 +99,12 @@ img {
   line-height: 120.1%;
 }
 
+/* About page styling */
+.bio,
+.contact {
+  background-color: #38bdf8;
+}
+
 /* Tablet */
 @media only screen and (min-width: 744px) {
   /* Tablet default styling */
@@ -156,8 +166,7 @@ img {
 /* Desktop */
 @media only screen and (min-width: 1200px) {
   /* Default styling for Desktop */
-  header,
-  main {
+  .text-container {
     margin-right: 13rem;
     margin-left: 13rem;
   }
