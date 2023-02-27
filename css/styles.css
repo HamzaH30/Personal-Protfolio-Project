@@ -4,14 +4,12 @@
   padding: 0;
 }
 
-/* Mobile: 320px */
-body {
-  background: no-repeat linear-gradient(220deg, white, #38bdf8);
-}
+/* Default styles */
 
 h1,
 h2,
-p {
+p,
+a {
   color: #0c0100;
 }
 
@@ -20,6 +18,27 @@ main {
   margin: 0 2rem;
 }
 
+/* Mobile default styling */
+h1 {
+  font-family: Oswald, sans-serif;
+  font-weight: 600;
+  font-size: 2.25rem;
+}
+
+h2 {
+  font-family: Arsenal, sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+p {
+  font-family: Marvel, sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 150%;
+}
+
+/* Navigation styling */
 header {
   display: flex;
   justify-content: space-between;
@@ -28,11 +47,22 @@ header {
 
 nav ul {
   display: none;
-  list-style: none;
 }
 
 img {
-  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.github-header:nth-child(2),
+.github-header:nth-child(3) {
+  display: none;
+}
+
+/* Mobile: 320px */
+/* Main page styling */
+#main-page {
+  background: no-repeat linear-gradient(220deg, white, #38bdf8);
 }
 
 #main-page-text {
@@ -41,7 +71,8 @@ img {
   justify-content: center;
 
   text-align: center;
-  height: calc(100vh - 29px - 32px);
+  /* The m-top of the header is 32px, the header itself is 31px (32 + 31 = 63) */
+  height: calc(100vh - 63px);
   text-transform: uppercase;
 }
 
@@ -62,4 +93,91 @@ img {
   font-weight: 400;
   text-transform: capitalize;
   line-height: 120.1%;
+}
+
+/* Tablet */
+@media only screen and (min-width: 744px) {
+  /* Tablet default styling */
+  h2 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
+
+  /* Navigation styling */
+  #menu-logo {
+    display: none;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+  }
+
+  nav a {
+    font-family: Marvel, sans-serif;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    margin: 0 1.5rem;
+  }
+
+  nav a:first-child {
+    margin-left: 0;
+  }
+
+  .github-header:nth-child(1) {
+    display: none;
+  }
+
+  .github-header:nth-child(2) {
+    display: inline-block;
+  }
+
+  /* Main page */
+  #intro-heading {
+    font-size: 2rem;
+  }
+
+  #name-heading {
+    font-size: 6rem;
+  }
+
+  #main-page-text {
+    /* The m-top of the header is 32px, the header itself is 39px (32 + 39 = 71) */
+    height: calc(100vh - 71px);
+  }
+}
+
+/* Desktop */
+@media only screen and (min-width: 1200px) {
+  /* Default styling for Desktop */
+  header,
+  main {
+    margin-right: 13rem;
+    margin-left: 13rem;
+  }
+
+  /* Navigation styling */
+  .github-header:nth-child(2) {
+    display: none;
+  }
+
+  .github-header:nth-child(3) {
+    display: inline-block;
+  }
+
+  /* Main page */
+  #name-heading {
+    font-size: 8.25rem;
+  }
+
+  #main-page-text {
+    /* The m-top of the header is 32px, the header itself is 47px (32 + 47 = 79) */
+    height: calc(100vh - 79px);
+  }
 }
