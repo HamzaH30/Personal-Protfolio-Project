@@ -172,6 +172,42 @@ main h2 {
   font-weight: 700;
 }
 
+/* Footer */
+footer {
+  background-color: black;
+  color: white;
+
+  text-align: center;
+  padding: 2rem 0;
+}
+
+footer p {
+  color: white;
+}
+
+footer .text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.left-footer p {
+  margin-bottom: 0.5rem;
+}
+
+#copyright {
+  text-transform: uppercase;
+}
+
+.footer-icons {
+  font-size: 1.5rem;
+}
+
+.footer-icons i {
+  margin: 0 1rem;
+}
+
 /* Tablet */
 @media only screen and (min-width: 744px) {
   /* Tablet default styling */
