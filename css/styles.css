@@ -102,12 +102,21 @@ img {
 }
 
 /* About page styling */
+main > * {
+  padding: 2rem 0;
+}
+
+main h2 {
+  margin-bottom: 0.25rem;
+}
+
 .bio,
 .contact {
   background-color: #38bdf8;
 }
 
 .introduction {
+  padding-top: 0;
   text-align: center;
 }
 
@@ -122,6 +131,14 @@ img {
 
   border: none;
   background-color: #0085ff;
+}
+
+.bio p {
+  margin-bottom: 1rem;
+}
+
+.bio p:last-child {
+  margin: 0;
 }
 
 /* Tablet */
