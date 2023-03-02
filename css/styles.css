@@ -82,6 +82,10 @@ img {
   text-transform: uppercase;
 }
 
+#main-page-text > * {
+  padding: 0;
+}
+
 #intro-heading {
   font-family: Marvel, sans-serif;
   font-weight: 400;
@@ -226,7 +230,6 @@ footer .text-container {
 
   nav ul {
     display: flex;
-    justify-content: space-evenly;
     list-style: none;
   }
 
