@@ -44,11 +44,14 @@ p {
   line-height: 150%;
 }
 
-/* Navigation styling */
 header {
+  margin-top: 2rem;
+}
+
+/* Navigation styling */
+#main-header {
   display: flex;
   justify-content: space-between;
-  margin-top: 2rem;
 }
 
 nav ul {
@@ -84,6 +87,7 @@ img {
 
 #main-page-text > * {
   padding: 0;
+  margin: 0;
 }
 
 #intro-heading {
@@ -231,6 +235,9 @@ footer .text-container {
   nav ul {
     display: flex;
     list-style: none;
+    justify-content: center;
+
+    gap: 1.5rem;
   }
 
   nav a {
@@ -238,8 +245,6 @@ footer .text-container {
     font-size: 1.5rem;
     text-transform: uppercase;
     text-decoration: none;
-
-    margin: 0 1.5rem;
   }
 
   nav a:first-child {
@@ -266,6 +271,32 @@ footer .text-container {
   #main-page-text {
     /* The m-top of the header is 32px, the header itself is 39px (32 + 39 = 71) */
     height: calc(100vh - 71px);
+  }
+
+  /* About Me Page */
+  #blue-line {
+    width: 9rem;
+  }
+
+  main h2 {
+    margin-bottom: 0.75rem;
+  }
+
+  main > * {
+    padding: 3.5rem 0;
+  }
+
+  /* Footer */
+  footer .text-container {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: initial;
+
+    font-size: 1rem;
+  }
+
+  footer p {
+    font-size: 1rem;
   }
 }
 
