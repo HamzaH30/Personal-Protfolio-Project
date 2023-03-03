@@ -337,4 +337,9 @@ footer .text-container {
     /* The m-top of the header is 32px, the header itself is 47px (32 + 47 = 79) */
     height: calc(100vh - 79px);
   }
+
+  /* About page - Contact section */
+  .contact p {
+    text-align: center;
+  }
 }
