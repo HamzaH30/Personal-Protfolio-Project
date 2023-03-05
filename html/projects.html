@@ -20,6 +20,9 @@
       href="https://fonts.googleapis.com/css2?family=Arsenal&family=Marvel:wght@400;700&family=Metal&family=Oswald:wght@500;600&display=swap"
       rel="stylesheet"
     />
+
+    <!-- JavaScript -->
+    <script src="../js/app.js" defer></script>
   </head>
   <body>
     <header class="text-container">
@@ -47,7 +50,7 @@
       </section>
 
       <section class="web-dev">
-        <img src="../images/purple-desktop.png" alt="" id="desktop-graphic" />
+        <img src="../images/purple-desktop.png" alt="" />
         <h2>Web Development</h2>
         <section class="websites">
           <img
@@ -84,34 +87,39 @@
       </section>
 
       <section class="python">
-        <img src="../images/Python Logo.png" alt="" />
+        <img src="../images/Python Logo.png" alt="" class="graphic" />
         <h2>Python</h2>
         <section class="carousel">
-          <div class="slide">
-            <img src="../images/Python Project Images/Amazon.jpg" alt="" />
-          </div>
-          <div class="slide">
-            <img src="../images/Python Project Images/Cookie.jpg" alt="" />
-          </div>
-          <div class="slide">
-            <img
-              src="../images/Python Project Images/Internet-Speed.jpg"
-              alt=""
-            />
-          </div>
-          <div class="slide">
-            <img src="../images/Python Project Images/ISS.jpg" alt="" />
-          </div>
-          <div class="slide">
-            <img src="../images/Python Project Images/Stocks.jpg" alt="" />
-          </div>
-          <div class="slide">
-            <img src="../images/Python Project Images/Movies.jpg" alt="" />
+          <button class="prev">&larr;</button>
+          <button class="next">&rarr;</button>
+          <div class="slides">
+            <!-- TODO: For js - Use datasets to "turn on and off" a slide -->
+            <div class="slide" data-active>
+              <img src="../images/Python Project Images/Amazon.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="../images/Python Project Images/Cookie.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img
+                src="../images/Python Project Images/Internet-Speed.jpg"
+                alt=""
+              />
+            </div>
+            <div class="slide">
+              <img src="../images/Python Project Images/ISS.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="../images/Python Project Images/Stocks.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="../images/Python Project Images/Movies.jpg" alt="" />
+            </div>
           </div>
         </section>
 
-        <section class="project-descriptions">
-          <div class="project-description">
+        <section class="project-descriptions text-container">
+          <div class="project-description" data-active>
             <h3>Amazon Price Tracker</h3>
             <p>
               This is my own version of an Amazon Price Tracker. Once the price
@@ -165,14 +173,21 @@
           </div>
         </section>
 
+        <!-- TODO: Style this section -->
         <div class="project-link">
           <a href="">View this project on GitHub</a>
         </div>
       </section>
 
       <section class="science-fairs">
+        <img src="../images/Science-graphic.png" alt="" class="graphic" />
+        <h2>Science Fairs</h2>
+
         <section class="carousel">
-          <div class="slide">
+          <button class="prev">&larr;</button>
+          <button class="next">&rarr;</button>
+
+          <div class="slide" data-active>
             <img
               src="../images/Science Fairs/Science Fair - Blockchain.png"
               alt=""
@@ -192,8 +207,8 @@
           </div>
         </section>
 
-        <section class="project-descriptions">
-          <div class="project-description">
+        <section class="project-descriptions text-container">
+          <div class="project-description" data-active>
             <h3>
               Best in Computer Science Project - Blockchain & Pharmaceutical
             </h3>
