@@ -26,7 +26,7 @@ h1 {
   font-weight: 600;
   font-size: 2.25rem;
   text-align: center;
-  margin: 2rem 0 1rem;
+  margin: 0 0 1rem;
 }
 
 h2 {
@@ -158,6 +158,31 @@ footer .text-container {
   color: white;
 }
 
+.web-dev {
+  background-color: #131313;
+  border-top-left-radius: 1.25rem;
+  border-top-right-radius: 1.25rem;
+
+  text-align: center;
+}
+
+.web-dev h2 {
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.websites {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  padding: 0 2rem;
+}
+
+.websites img {
+  width: 100%;
+  border-radius: 2rem;
+}
+
 #main-header {
   display: flex;
   justify-content: space-between;
@@ -209,6 +234,10 @@ footer .text-container {
 
   border: none;
   background-color: #0085ff;
+}
+
+#no-image-above {
+  margin-top: 2rem;
 }
 
 /* Tablet */
