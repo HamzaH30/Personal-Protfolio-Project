@@ -152,8 +152,10 @@ footer .text-container {
   font-size: 1.5rem;
 }
 
+/* TODO: need to fix a bug where the footer icons are not showing as white on the projects.html page */
 .footer-icons i {
   margin: 0 1rem;
+  color: white;
 }
 
 #main-header {
