@@ -56,6 +56,10 @@ nav ul {
   display: none;
 }
 
+nav a:hover {
+  text-decoration: underline;
+}
+
 main > * {
   padding: 2rem 0;
 }
