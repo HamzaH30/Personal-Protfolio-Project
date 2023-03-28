@@ -283,12 +283,19 @@ footer .text-container {
   font-family: Marvel, sans-serif;
   font-weight: 400;
   font-size: 1rem;
+
+  animation: fade-in-up 2s;
+  animation-fill-mode: both;
 }
 
 #name-heading {
   font-weight: 700;
   font-size: 2.5rem;
   margin: 0;
+
+  animation: fade-in-up 2s;
+  animation-fill-mode: both;
+  animation-delay: 1s;
 }
 
 #intro-text {
@@ -296,6 +303,10 @@ footer .text-container {
   font-weight: 400;
   text-transform: capitalize;
   line-height: 120.1%;
+
+  animation: fade-in-up 2s;
+  animation-fill-mode: both;
+  animation-delay: 2s;
 }
 
 #blue-line {
@@ -309,6 +320,18 @@ footer .text-container {
 
 #no-image-above {
   margin-top: 2rem;
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Tablet */
