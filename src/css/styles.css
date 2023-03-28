@@ -371,8 +371,7 @@ footer .text-container {
   justify-content: center;
 
   text-align: center;
-  /* The m-top of the header is 32px, the header itself is 31px (32 + 31 = 63) */
-  height: calc(100vh - 63px);
+  height: 100vh;
   text-transform: uppercase;
 }
 
@@ -504,7 +503,8 @@ footer .text-container {
     font-size: 1rem;
   }
 
-  .hamburger-menu {
+  .hamburger-menu,
+  .mobile-menu {
     display: none;
   }
 
@@ -555,8 +555,7 @@ footer .text-container {
   }
 
   #main-page-text {
-    /* The m-top of the header is 32px, the header itself is 39px (32 + 39 = 71) */
-    height: calc(100vh - 71px);
+    height: calc(100vh - 61px);
   }
 
   #blue-line {
@@ -591,7 +590,6 @@ footer .text-container {
   }
 
   #main-page-text {
-    /* The m-top of the header is 32px, the header itself is 47px (32 + 47 = 79) */
-    height: calc(100vh - 79px);
+    height: calc(100vh - 61px);
   }
 }
