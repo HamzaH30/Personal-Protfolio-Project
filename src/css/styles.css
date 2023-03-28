@@ -96,6 +96,21 @@ main h2 {
   transform: translateY(14px);
 }
 
+/* Mobile Menu - Hamburger Menu When Opened */
+.opened-menu .middle {
+  display: none;
+}
+
+.opened-menu .top {
+  transform: rotate(45deg);
+  transition: transform 2s ease-in-out;
+}
+
+.opened-menu .bottom {
+  transform: rotate(-45deg);
+  transition: transform 2s ease-in-out;
+}
+
 footer {
   background-color: black;
   color: white;
