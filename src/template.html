@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hamza Haque</title>
+
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+
+    <script src="js/app.js" defer></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arsenal&family=Marvel:wght@400;700&family=Metal&family=Oswald:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body id="main-page-bg">
+    <!-- 
+      TODO: 
+      1. Add a background blur when scrolling for navigation menu/Header
+      2. Work on the projects.html page
+      3. Add a GitHub logo (favicon) to the header
+        For desktop & tablet it should be top-right
+        For mobile it should be top-left
+      4. Add a website colour theme picker
+      5. Customize scroll bar
+      6. (Maybe) Remove scroll bar when in mobile menu (Mobile user shouldn't be able to scroll when looking at menu)
+    -->
+
+    <!-- A shadow that overlays the entire content -->
+    <div id="overlay"></div>
+
+    <header class="text-container">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="html/about.html">About</a></li>
+          <li><a href="html/projects.html">Projects</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Mobile Menu -->
+    <section id="mobile-menu" class="mobile-menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="html/about.html">About</a></li>
+        <li><a href="html/projects.html">Projects</a></li>
+      </ul>
+    </section>
+
+    <!-- Hamburger Button for mobile menu -->
+    <button id="menu-btn" class="hamburger-menu" type="button">
+      <span class="top"></span>
+      <span class="middle"></span>
+      <span class="bottom"></span>
+    </button>
+
+    <main id="main-page-text" class="text-container">
+      <h2 id="intro-heading">Hello, my name is</h2>
+      <h1 id="name-heading">Hamza Haque</h1>
+      <p id="intro-text">I'm a student, programmer, and life-long learner</p>
+    </main>
+  </body>
+</html>
