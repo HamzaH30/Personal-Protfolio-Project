@@ -1,3 +1,5 @@
+import "../css/styles.css";
+
 function menuClick() {
   menuBtn.classList.toggle("opened-menu");
   mobileMenu.classList.toggle("show-menu");
