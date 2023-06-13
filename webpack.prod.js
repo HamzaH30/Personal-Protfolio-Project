@@ -26,12 +26,12 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "./src/html/about.html",
       filename: "html/about.html",
-      chunks: ["about"],
+      chunks: ["main"],
     }),
     new HtmlWebpackPlugin({
       template: "./src/html/projects.html",
       filename: "html/projects.html",
-      chunks: ["projects"],
+      chunks: ["main"],
     }),
   ],
 };
