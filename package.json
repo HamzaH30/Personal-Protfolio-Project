@@ -4,7 +4,7 @@
   "description": "This is my Personal Portfolio Project that I will be working on over the next several weeks.",
   "main": "index.js",
   "scripts": {
-    "install": "npm install --save-dev webpack webpack-dev-server webpack-cli style-loader css-loader html-webpack-plugin",
+    "install": "npm install --save-dev webpack webpack-dev-server webpack-cli style-loader css-loader html-webpack-plugin file-loader",
     "build": "webpack --config webpack.prod.js",
     "start": "npm install && npm run build"
   },
@@ -12,6 +12,7 @@
   "license": "ISC",
   "devDependencies": {
     "css-loader": "^6.8.1",
+    "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.5.3",
     "style-loader": "^3.3.3",
     "webpack": "^5.86.0",
