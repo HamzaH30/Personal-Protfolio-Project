@@ -1,0 +1,40 @@
+:root {
+  --main-colour: #0084bd;
+  --light-accent: #669ebb;
+  --dark-accent: #58636f;
+  --light-shade: #ebeae9;
+  --dark-shade: #171925;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 400;
+  font-size: 6rem;
+}
+
+h2 {
+  font-family: "Dosis", sans-serif;
+  font-size: 3rem;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Pridi", serif;
+}
+
+p,
+a,
+label,
+input,
+textarea,
+option {
+  font-family: "Hind Madurai", sans-serif;
+}
